@@ -12,23 +12,168 @@
 </head>
 <body>
   <nav class="navbar">
-    <img class="nav-logo" src="imgs/Logo.png">
-    <div>
+    <div class="nav-left">
+      <img class="nav-logo" src="imgs/logo.png" alt="logo">
+    </div>
+    <div class="nav-right">
       <a href="index.html">Home</a>
       <a href="services.html">Our Services</a>
       <a href="projects.html">Projects</a>
-      <a href="contact.html" class="main-button">Contact Us</a>
+      <button onclick="goToDiffrentPage('contact')" href=".html" class="main-btn">Contact Us</button>
     </div>
   </nav>
-  <header>
-
-  </header>
-  <main>
-
+  <main class="main-services-container flex flex-col">
+    <video class="services-video mt-12" controls muted poster="imgs/img-thumbnail.png">
+      <source src="videos/immersiveDesign.mp4" type="video/mp4" alt="our immersive 3D cinematic designs">
+      Your browser does not support the video tag.
+    </video>
+    <h3 class="font-thin p-6 mb-10">Nature Apartment</h3>
+    <div class="flagship-service-container">
+      <h1>Our Flagship Service</h1>
+      <h2>Immersive PhotoRealistic Designs</h2>
+      <h3>Through Cutting Edge software and the most skilled workers, Our Design Team can make your floor plane into an actual real-world visualization of your plans.</h3>
+      <h2>These designs are best for</h2>
+      <h3>Civil Engineering firms who want to win bids.</h3>
+      <h3>Developers who want the best marketing and who want to see which materials or designs actually look good before hands touch hammers.</h3>
+      <h3>Manufacturing Teams who want to see prototype looks of designs. </h3>
+      <button onclick="goToDiffrentPage('services')" class="main-btn m-auto text-sm">Get a Quote</button>
+    </div>
+    <h3 class="mt-24 text-center font-mono font-thin text-5xl">Services:</h3>
+    <div class="cards-container">
+      <div class="each-card-container">
+        <img src="imgs/3DPlan.jpeg" alt="3D Floor Plan Realistic Photo Render">
+        <h2>3D Floor Plans</h2>
+        <p>
+          The majority of homes being built are being built by the same major companies. Is it because their houses are magic? No, it's their marketing and brand name. If you want a bigger share of the pie you need to market the same way. Successful companies market well, successful construction companies use 3D Floor Plans to Market.
+        </p>
+        <button onclick="goToDiffrentPage('services')" href="services.html" class="main-btn m-auto">Get a Quick Quote</button>
+      </div>
+      <div class="each-card-container">
+        <img src="imgs/queenstownModern.jpg" alt="interier Realistic Photo Render of a home in queenstown">
+          <h2>Interiors</h2>
+          <p>
+            People buy based on their emotions. How do show a message, how do you share a vision? You cant tell people your vision, you have to show them. When you show the interior shots you show a lifestyle and when you get it just right, your client feels understood and when that happens, your client stays with you.   
+          </p>
+        <button onclick="goToDiffrentPage('services')" href="services.html" class="main-btn m-auto">Get a Quick Quote</button>
+      </div>
+      <div class="each-card-container">
+        <img src="imgs/exterior-home.jpeg" alt="Exterior Realistic Photo Render of a Small Modern Family Home">
+          <h2>Exteriors</h2>
+          <p>
+            Investing is now a lot more common, and knowledge that homes are extremely stable assets is almost universal. The exterior shot is for construction companies that are trying to sell to more financially secure clients who are making a golden nest egg.  The exterior shot is the best way to show a client why they should pick you.
+          </p>
+        <button onclick="goToDiffrentPage('services')" href="services.html" class="main-btn m-auto">Get a Quick Quote</button>
+      </div>
+    </div>
+    </div>
+    <img class="full-img" src="imgs/summerFamily.png" alt="realistic render of the exterior of a home">
+    <div class="content-container">
+      <h1>NZ Archviz Strives for Designing Excellence at an Affordable price</h1>
+      <h3>Let us prove how much your Customers will appreciate The difference we make</h3>
+      <button onclick="goToDiffrentPage('services')" href="services.html" class="main-btn m-auto">Get a Quick Quote</button>
+    </div>
+    <div class="main-contact-container">
+      <div class="site-info-container">
+        <h1>Contact Us.</h1>
+        <p>
+          <h5>email: hello@nzarchviz.co.nz</h5> 
+          <h5>phone: 09 476 7844</h5> 
+        </p>
+        <div class="social-media-icons">
+          <img src="imgs/facebook-icon.png" alt="Facebook Icon">
+          <img src="imgs/instagram-icon.png" alt="Instagram Icon">
+        </div>
+      </div>
+      <form class="contact-form p-6 m-auto">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="mb-6 font-thin"> 
+            <label>Name:</label>
+            <input type="text" class="form-control
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            >
+          </div>
+          <div class="mb-6 font-thin">
+            <label>Phone Number:</label>
+            <input type="text" class="form-control
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              >
+          </div>
+        </div>
+        <div class="mb-6 font-thin">
+          <label>Email:</label>
+          <input type="email" class="form-control block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+            >
+        </div>
+        <div class="mb-6 font-thin">
+          <label>Message:</label>
+          <textarea class="form-control block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+            ></textarea>
+        </div>
+        <button class="main-btn m-auto">Send</button>
+      </form>
+    </div>
   </main>
- 
   <footer>
-    
+    <div class="footer-left">
+      <h3 class="font-mono">NZ ARCHVIZ</h3>
+    </div>
+    <div class="footer-right">
+      <h3 class="font-mono">Projects:</h3>
+      <a href="projects.html#floorPlans">3D Floor Plans</a>
+      <a href="projects.html#interier">Interier</a>
+      <a href="projects.html#exterior">Exterior</a>
+    </div>
   </footer>
+  <script src="components.js"></script>
 </body>
 </html>

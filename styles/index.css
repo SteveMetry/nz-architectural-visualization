@@ -1,34 +1,6 @@
-.cards-container {
-  width: 100%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  padding: 5rem 0rem;
-}
-
-.each-card-container {
-  padding: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.each-card-container h2 {
-  font-weight: 100;
-  text-align: center;
-  font-size: 3rem;
-  font-family: ui-monospace;
-  letter-spacing: 1px;
-}
-
-.each-card-container p{
-  text-align: center;
-  padding: 0.2rem;
-  font-size: 2rem;
-  font-weight: 200;
-}
 
 .block-container {
-  height: 85vh;
+  height: 110rem;
   background-color: rgb(102, 113, 89);
   color: white;
   text-align: center;
@@ -57,22 +29,6 @@
 }
 
 @media screen and (min-device-width: 600px) {
-  .cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-  }
-  .each-card-container h2 {
-    font-size: 2rem;
-  }
-  .each-card-container p{
-    font-size: 1rem;
-  }
-  .each-card-container img{
-    object-fit: cover;
-    width: 30vw;
-    height: 30vh;
-  }
   .block-container {
     height: 100vh;
   }
@@ -80,7 +36,6 @@
     font-size: 3rem;
     letter-spacing: 0.1rem;
   }
-  
   .block-container h2 { 
     font-weight: 100;
     font-size: 1.1rem;
@@ -91,25 +46,16 @@
     height: 5rem;
     width: 12rem;
   }
-  .each-card-container img{
-  object-fit: cover;
-  width: 30vw;
-  height: 30vh;
 }
+
+@media screen and (min-device-width: 800px) {
+  .block-container {
+    height: 90rem;
+  }
 }
 
 @media screen and (min-device-width: 1100px) {
   .block-container {
-    height: 150vh;
-  }
-}
-@media screen and (min-device-width: 1200px) {
-  .block-container {
-    height: 160vh;
-  }
-}
-@media screen and (min-device-width: 1300px) {
-  .block-container {
-    height: 170vh;
+    height: 100rem;
   }
 }
