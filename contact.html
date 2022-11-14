@@ -39,6 +39,7 @@
       <form id="contactForm" class="contact-form p-6 m-auto" onsubmit="submitQuery(event)">
         <div class="font-thin">
           <input
+            required  
             placeholder="Full Name"
             name="name"
             class="
@@ -61,7 +62,7 @@
               focus:outline-none
             " 
           />
-          <input
+          <input 
             placeholder="Subject"
             name="subject"
             class="
@@ -85,6 +86,7 @@
             " 
           />
           <textarea
+            required
             placeholder="Body"
             name="body"
             rows="3"
