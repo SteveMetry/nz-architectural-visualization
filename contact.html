@@ -2,12 +2,12 @@
 <html>
 <head>
   <link rel="icon" href="imgs/siteIcon.png">
-  <title>NZ ARCHVIZ | Archetecture Visulisation</title>
+  <title>NZ ARCHVIZ | Architecture Visualisation</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="styles/components.css" rel="stylesheet"/>
   <link href="styles/contact.css" rel="stylesheet"/>
   <meta name="description" content="Transform floor plans into 3D Immersive Designs, 3D floor plamns and Realistic Photos ">
-  <meta name="keywords" content="nzarchviz, 3D, immersive, designs, floor-plans, realistic, renders, archetecture, homes">
+  <meta name="keywords" content="nzarchviz, 3D, immersive, designs, floor-plans, realistic, renders, architecture, homes">
   <meta name="author" content="Steve Metry">
 </head>
 <body>
@@ -20,7 +20,7 @@
       <a href="index.html">Home</a>
       <a href="services.html">Our Services</a>
       <a href="projects.html">Projects</a>
-      <button onclick="goToDiffrentPage('contact')" class="main-btn">Contact Us</button>
+      <button onclick="goToDifferentPage('contact')" class="main-btn">Contact Us</button>
     </div>
   </nav>
   <main>
@@ -36,88 +36,85 @@
           <img src="imgs/instagram-icon.png" alt="Instagram Icon">
         </div>
       </div>
-      <form id="contactForm" class="contact-form p-6 m-auto">
-        <!-- <div class="grid grid-cols-2 gap-4">
-          <div class="mb-6 font-thin"> 
-            <label>Name:</label>
-            <input type="text" class="form-control 
-              w-full
-              px-3
-              py-1.5
-              text-base
-              font-normal
-              text-gray-700
-              bg-white bg-clip-padding
-              border border-solid border-gray-300
-              rounded
-              transition
-              ease-in-out
-              m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            >
-          </div>
-          <div class="mb-6 font-thin">
-            <label>Phone Number:</label>
-            <input type="text" class="form-control
-              w-full
-              px-3
-              py-1.5
-              text-base
-              font-normal
-              text-gray-700
-              bg-white bg-clip-padding
-              border border-solid border-gray-300
-              rounded
-              transition
-              ease-in-out
-              m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              >
-          </div>
-        </div> -->
-        <div class="mb-6 font-thin">
-          <label>Email:</label>
+      <form id="contactForm" class="contact-form p-6 m-auto" onsubmit="submitQuery(event)">
+        <div class="font-thin">
           <input
-          type="email"
-          class="form-control block
-            w-full
-            px-3
-            py-1.5
-            text-base
-            font-normal
-            text-gray-700
-            bg-white bg-clip-padding
-            border border-solid border-gray-300
-            rounded
-            transition
-            ease-in-out
-            m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
-          >
-        </div>
-        <div class="mb-6 font-thin">
-          <label>Message:</label>
-          <textarea class="form-control block
-            w-full
-            px-3
-            py-1.5
-            text-base
-            font-normal
-            text-gray-700
-            bg-white bg-clip-padding
-            border border-solid border-gray-300
-            rounded
-            transition
-            ease-in-out
-            m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
-            ></textarea>
+            placeholder="Full Name"
+            name="name"
+            class="
+              form-control
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              border
+              border-solid
+              border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              mb-6
+              focus:border-blue-600
+              focus:outline-none
+            " 
+          />
+          <input
+            placeholder="Subject"
+            name="subject"
+            class="
+              form-control
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              border
+              border-solid
+              border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              mb-6
+              focus:border-blue-600
+              focus:outline-none
+            " 
+          />
+          <textarea
+            placeholder="Body"
+            name="body"
+            rows="3"
+            class="
+              form-control
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              border
+              border-solid
+              border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              mb-6
+              focus:border-blue-600
+              focus:outline-none
+            " 
+          ></textarea>
         </div>
         <button
-          id="sendQueryBtn"
-          class="btn main-btn m-auto"
-          onclick="sendQuery()"
-        >Send</button>
+          type="submit"
+          class="main-btn bg-black white m-auto"
+        >
+          Send
+        </button>
       </form>
     </div>
   </main>

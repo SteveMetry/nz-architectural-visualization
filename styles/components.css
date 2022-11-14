@@ -4,16 +4,15 @@ body {
 }
 
 footer {
- display: grid;
- grid-template-columns: 1fr 1fr;
- height: 20vh;
- width: 100%;
- background-color: rgb(241, 241, 239);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(241, 241, 239);
 }
 
 footer h3 {
   font-size: 1.3rem;
-  
 }
 
 footer a {
@@ -24,12 +23,14 @@ footer a {
 .footer-left {
   padding: 1.2rem;
 }
+
 .footer-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 1.2rem;
 }
+
 .main-btn {
   background-color: black;
   color: white;
@@ -65,6 +66,7 @@ footer a {
   font-size: 4rem;
   padding: 2rem 0rem;
 }
+
 .content-container .main-btn {
   justify-self: center;
   width: 50%;
@@ -79,6 +81,7 @@ footer a {
   background-color: rgb(255, 255, 255);
   width: 100vw;
 }
+
 .nav-logo {
   width: 28vw;
   margin-left: 1rem;
@@ -138,9 +141,11 @@ footer a {
   justify-content: space-evenly;
   width: 100vw;
 }
+
 .social-media-icons img {
   width: 8vw;
 }
+
 .site-info-container {
   display: flex;
   flex-direction: column;
@@ -156,6 +161,7 @@ footer a {
   font-family: ui-monospace;
   letter-spacing: 2px;
 }
+
 .site-info-container h5 {
   font-weight: 100;
   font-size: 3rem;
@@ -172,16 +178,9 @@ footer a {
   flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea {
-  background-color: rgb(214,214,214);
-  height: 5rem;
+.contact-form input {
   font-size: 3rem;
-}
-.contact-form textarea {
-  min-height: 9rem;
-}
-.contact-form label {
-  font-size: 4rem;
+  height: 5rem;
 }
 
 .contact-form .main-btn {
@@ -261,19 +260,13 @@ footer a {
     height: 30vh;
   }
   .contact-form {
-    width: auto;
+    width: 100%;
+    max-width: 400px;
   }
-  .contact-form input, .contact-form textarea {
+  .contact-form input {
+    font-size: 1rem;
     height: 3rem;
-    font-size: 1rem;
   }
-  .contact-form textarea {
-    min-height: 1rem;
-  }
-  .contact-form label {
-    font-size: 1rem;
-  }
-
 }
 
 @media screen and (min-device-width: 800px) {
@@ -285,8 +278,4 @@ footer a {
     height: 6.5rem;
     margin-left: 2.2rem;
   }
-}
-
-@media screen and (min-device-width: 1200px) {
- 
 }
